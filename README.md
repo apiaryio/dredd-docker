@@ -1,7 +1,7 @@
 <h1 align="center">Dredd in Docker</h1>
-<h2 align="center">
+<h3 align="center">
     DockerHub: <a href="https://hub.docker.com/r/apiaryio/dredd/">apiaryio/dredd</a>
-</h2>
+</h3>
 <p align="center">
     <img src="https://img.shields.io/docker/build/apiaryio/dredd.svg" alt="Docker Build Status">
     <img src="https://img.shields.io/docker/pulls/apiaryio/dredd.svg" alt="Docker Pulls">
