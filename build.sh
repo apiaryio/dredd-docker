@@ -1,6 +1,12 @@
 #!/bin/bash
-DREDD_VERSION=$(npm view dredd version)
+set -e
+
+if [ -z "$DREDD_VERSION" ]; then
+  echo "You need to set the DREDD_VERSION environment variable before running this script"
+  exit 1
+fi
 echo "Building version: $DREDD_VERSION"
+
 docker build \
   -t "apiaryio/dredd:$DREDD_VERSION" \
   --build-arg DREDD_VERSION="$DREDD_VERSION" \
