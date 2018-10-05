@@ -8,3 +8,4 @@ docker build \
   --no-cache \
   .
 docker tag "apiaryio/dredd:$DREDD_VERSION" apiaryio/dredd:latest
+docker tag "apiaryio/dredd:$DREDD_VERSION" apiaryio/dredd:stable
