@@ -1,17 +1,10 @@
 sudo: "required"
-
 dist: "trusty"
-language: "node_js"
+language: "generic"
 services:
   - "docker"
-cache:
-  directories:
-    - "node_modules"
-install: "npm install"
-
 script:
   - "bash build.sh"
-
 deploy:
   provider: "script"
   script: "bash docker_push.sh"
