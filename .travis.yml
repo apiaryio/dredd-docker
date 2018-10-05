@@ -1,0 +1,12 @@
+sudo: "required"
+dist: "trusty"
+language: "generic"
+services:
+  - "docker"
+script:
+  - "bash build.sh"
+deploy:
+  provider: "script"
+  script: "bash docker_push.sh"
+  on:
+    branch: "master"
