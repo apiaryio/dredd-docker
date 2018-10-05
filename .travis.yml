@@ -1,19 +1,19 @@
-sudo: required
+sudo: "required"
 
 dist: "trusty"
 language: "node_js"
 services:
-  - docker
+  - "docker"
 cache:
   directories:
     - "node_modules"
 install: "npm install"
 
 script:
-  - bash build.sh
+  - "bash build.sh"
 
 deploy:
-  provider: script
-  script: bash docker_push
+  provider: "script"
+  script: "bash docker_push"
   on:
-    branch: master
+    branch: "master"
