@@ -4,6 +4,7 @@ language: "generic"
 services:
   - "docker"
 script:
+  - "export DREDD_VERSION=$(npm view dredd version)"
   - "bash build.sh"
 deploy:
   provider: "script"
