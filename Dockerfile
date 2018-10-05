@@ -1,9 +1,6 @@
-# https://hub.docker.com/r/mhart/alpine-node/
 FROM node:carbon-alpine
-# If you have native dependencies, you'll need extra tools
 
-MAINTAINER  Apiary <sre@apiary.io>
-ENV REFRESHED_AT 2018-04-17
+MAINTAINER Apiary <sre@apiary.io>
 
 ARG DREDD_VERSION=latest
 RUN echo ${DREDD_VERSION}
