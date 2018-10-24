@@ -13,13 +13,13 @@ Dredd is an HTTP API testing tool. You can find out more about it at [its docume
 
 ## How to run Dredd using Docker?
 
-You can use following to run `dredd` without any arguments:
+Following line runs the `dredd` command using the `apiaryio/dredd` Docker image:
 
 ```shell
-docker run -it -v $PWD:/api -w /api apiaryio/dredd
+docker run -it -v $PWD:/api -w /api apiaryio/dredd dredd
 ```
 
-When you need to pass arguments, append the whole command you want to run. For example, if you want to run `dredd init`, run following instead:
+As an example of how to pass arguments, following line runs the `dredd init` command:
 
 ```shell
 docker run -it -v $PWD:/api -w /api apiaryio/dredd dredd init
