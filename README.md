@@ -13,32 +13,8 @@ Dredd is an HTTP API testing tool. You can find out more about it at [its docume
 
 ## How to run Dredd using Docker?
 
-Following line runs the `dredd` command using the `apiaryio/dredd` Docker image:
-
-```shell
-docker run -it -v $PWD:/api -w /api apiaryio/dredd dredd
-```
-
-As an example of how to pass arguments, following line runs the `dredd init` command:
-
-```shell
-docker run -it -v $PWD:/api -w /api apiaryio/dredd dredd init
-```
-
-### Windows
-
-Getting following error?
-
-```
-Error response from daemon: create $PWD: "$PWD" includes invalid characters for a local volume name, only "[a-zA-Z0-9][a-zA-Z0-9_.-]" are allowed. If you intended to pass a host directory, use absolute path.
-```
-
-The `$PWD:/api` part of the command doesn't work on Windows. Use absolute path instead or try if `${pwd}:/api` does the trick:
-
-```shell
-C:\Users\Susan> docker run -it -v ${pwd}:/api -w /api apiaryio/dredd dredd
-```
+Please read the [Docker section](https://dredd.org/en/latest/installation.html#docker) of the Dredd's installation guide.
 
 ## How does this repository work?
 
-This repository has [Travis CI builds](travis-ci.org/apiaryio/dredd-docker) set up. Travis CI supports setting a [cron build](https://docs.travis-ci.com/user/cron-jobs/), which triggers every day. This build ensures the Dredd image isn't behind the latest Dredd version for more than one day.
+This repository has [Travis CI builds](travis-ci.org/apiaryio/dredd-docker) set up. Travis CI supports setting up a [cron build](https://docs.travis-ci.com/user/cron-jobs/), which triggers every day. The build ensures the Dredd image isn't behind the latest Dredd version for more than one day.
