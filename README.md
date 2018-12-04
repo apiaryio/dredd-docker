@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/docker/stars/apiaryio/dredd.svg" alt="Docker Stars">
 </p>
 
-Dredd is an HTTP API testing tool. You can find out more about it at [its documentation](https://github.com/apiaryio/dredd) or its [code repository](https://dredd.rtfd.io). This repository contains [Docker](https://www.docker.com/) setup for Dredd in form of a `Dockerfile` and the tooling necessary to regularly publish a Docker image with the latest Dredd version available.
+Dredd is an HTTP API testing tool. You can find out more about it at [its documentation](https://dredd.org) or its [code repository](https://github.com/apiaryio/dredd). This repository contains [Docker](https://www.docker.com/) setup for Dredd in form of a `Dockerfile` and the tooling necessary to regularly publish a Docker image with the latest Dredd version available.
 
 ## How to run Dredd using Docker?
 
